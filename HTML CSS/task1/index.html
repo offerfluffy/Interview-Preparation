@@ -7,51 +7,61 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <span>Name</span>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container flex">
+        <span class="header__title">Name</span>
+        <nav class="nav">
+          <ul class="nav__list flex">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <article>
-        <header>
-          <div>
-            <h2>Title</h2>
-            <p>Subtitle</p>
-          </div>
-          <div>
-            <p>Author</p>
-            <p>Date</p>
-          </div>
-        </header>
 
-        <section>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit
-            itaque facilis ipsum? Dolorem quidem, quasi, perferendis cum
-            doloribus sit obcaecati qui magnam molestiae, quia odit! Totam
-            officia debitis omnis?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repudiandae perspiciatis perferendis in quae vel laudantium
-            recusandae dolorum exercitationem. Expedita, nisi! Recusandae
-            inventore doloribus aperiam molestiae odit iste repellat corporis
-            dolores!
-          </p>
-        </section>
+    <main class="main">
+      <div class="container">
+        <div class="article__wrapper grid">
+          <article class="article">
+            <header class="article__header">
+              <div class="article__title">
+                <h2>Title</h2>
+                <p>Subtitle</p>
+              </div>
+              <div class="article__author">
+                <p>Author</p>
+                <p>18-09-2025</p>
+              </div>
+            </header>
 
-        <figure>
-          <img src="image.jpg" alt="Descriptive text" />
-          <figcaption>Image caption goes here</figcaption>
-        </figure>
-      </article>
-      <footer>Copyright &copy;</footer>
+            <section class="article__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                impedit itaque facilis ipsum? Dolorem quidem, quasi, perferendis
+                cum doloribus sit obcaecati qui magnam molestiae, quia odit!
+                Totam officia debitis omnis?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae perspiciatis perferendis in quae vel laudantium
+                recusandae dolorum exercitationem. Expedita, nisi! Recusandae
+                inventore doloribus aperiam molestiae odit iste repellat
+                corporis dolores!
+              </p>
+            </section>
+
+            <figure class="article__caption">
+              <img src="image.jpg" alt="Descriptive text" />
+              <figcaption>Image caption goes here</figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
     </main>
+
+    <footer class="footer">
+      <div class="container">Copyright &copy;</div>
+    </footer>
   </body>
 </html>
